@@ -33,12 +33,12 @@ class RegistrationController extends AbstractController
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-            // encode the plain password
+            $user->setVerified('false');
+
+            $user->setRoles([$request->get('role')]);
             $user->setPassword(
-                $userPasswordHasher->hashPassword(
-                    $user,
-                    $form->get('plainPassword')->getData()
-                )
+
+                $form->get('plainPassword')->getData()
             );
 
             $entityManager->persist($user);

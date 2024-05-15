@@ -1,3 +1,127 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
 body {
-    background-color: skyblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.95); 
+    padding: 30px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    margin: 20px; 
+}
+
+.registration-form {
+    width: 100%;
+    text-align: center; /* Center align text */
+}
+
+.registration-form h2 {
+    margin-bottom: 20px;
+    font-size: 28px; /* Slightly larger font */
+    color: #333;
+    font-family: 'Georgia', serif; /* Serif font for heading */
+}
+
+.form-group {
+    margin-bottom: 20px; /* More space between form groups */
+    text-align: left; /* Left align text within form groups */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px; /* Larger padding */
+    border: 1px solid #ddd; /* Lighter border */
+    border-radius: 5px; /* More rounded corners */
+    transition: border-color 0.3s; /* Smooth border transition */
+}
+
+.form-group input:focus {
+    border-color: #f68b1e; /* Highlight border on focus */
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-group label {
+    margin-left: 5px;
+    font-weight: normal;
+    color: #666;
+}
+
+.checkbox-input {
+    width: auto;
+    margin-right: 10px;
+}
+
+.button {
+    width: 100%;
+    padding: 12px; /* Larger padding */
+    background-color: #f68b1e; /* Udemy's primary color */
+    border: none;
+    border-radius: 5px; /* More rounded corners */
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth color transition */
+}
+
+.button:hover {
+    background-color: #e67e22;
+}
+
+.button:focus {
+    outline: none;
+    box-shadow: 0 0 5px #f68b1e; /* Highlight button on focus */
+}
+
+/* Additional styles to improve layout */
+.registration-form h2 {
+    font-family: 'Georgia', serif;
+    margin-bottom: 20px;
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 20px;
+}
+
+.checkbox-group .checkbox-input {
+    width: auto;
+    margin-right: 5px;
+}
+
+.checkbox-group label {
+    font-weight: normal;
+    color: #333;
+}
+label + ul li {
+    color: red;
+}
+.dropdown-form-control {
+    width: 100%; 
+    height: 38px;
 }
